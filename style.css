@@ -1,0 +1,499 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	height: 100%;
+	background: linear-gradient(100deg,#ea3234, #4050ff);
+}
+/* ===================
+	Шапка сайта
+======================*/
+#shapka {
+	width: 100%;
+    height: 70px;
+    background: linear-gradient(100deg,#4050ff, #ea3234);
+}
+#shapka #glavnaya {
+	color: #000 !important;
+    text-decoration: none;
+}
+#logo {
+	width: 100%;
+	height: : 100%;
+	float: left;
+    position: relative;
+}
+
+#logo img {
+	width: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#logo span {
+    font-size: 30px;
+    position: absolute;
+    top: 16px;
+    left: 70px;
+}
+
+#menu {
+	float: right;
+	height: 100%;
+}
+
+#menu a {
+	color: white;
+	height: calc(100% - 15px);
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    float: left;
+    padding: 15px 10px 0;
+}
+#menu a:hover {
+	background: black;
+}
+/*=====================
+Основний блок з контактами та повдомленням
+=====================*/
+#content {
+	width: 750px;
+	height: calc(100% - 80px);
+	margin: 0 auto;
+	background: white;
+	position: relative;
+}
+/*================
+Лівий блок з пошуком та контактами
+==================*/
+#users {
+	width: 250px;
+	height: 100%;
+	float: left;
+}
+/*=======================
+Пошук
+=========================*/
+#poisk {
+	height: 30px;
+	width: calc(100% - 10px);
+	padding: 5px;
+}
+
+#poisk input {
+	height: 100%;
+	width: calc(100% - 55px);
+    border: none;
+    padding: 0 5px;
+    background: #c1c1f9;
+    margin: 0 5px 0 0;
+    float: left;
+    outline: none;
+    font-size: 20px;
+}
+#poisk button {
+	width: 40px;
+    height: 100%;
+    border: none;
+    background: #c1c1f9;
+    outline: none;
+    cursor: pointer;
+}
+
+#poisk button:active {
+	background:  grey;
+}
+
+#poisk img {
+	width: 100%;
+    height: 100%;
+}
+/*=======================
+Контакти
+========================*/
+#spisok {
+	height: calc(100% - 40px);
+	overflow-y: auto;
+}
+#spisok a {
+	text-decoration: none;
+	color: black;
+}
+#spisok li {
+	padding: 10px;
+	width: calc(100%-20px);
+	position: relative;
+}
+#spisok li:hover {
+	background: #e1343f;
+	background: linear-gradient(100deg,#ea3234, #4050ff);
+}
+
+#spisok ul {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#spisok ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#spisok ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#spisok h2 {
+	margin: 0 0 5px 0;
+}
+#spisok p {
+	margin: 0;
+}
+
+#spisok ul li .time {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+
+/*====================
+Перепска з користувачем
+======================*/
+#message {
+	float: right;
+	height: 100%;
+	width: calc(100% - 250px);
+}
+#list-message {
+	margin: 5px 5px;
+	width: calc(100% - 10px);
+	overflow-y: auto;
+	height: calc(100% - 75px);
+}
+
+#message ul {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#message li {
+	width: calc(100%-20px);
+	padding: 10px;
+	min-height: 60px;
+	background: rgb(101, 93, 239, 0.4);
+	position: relative;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+#message ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#message ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#message h2 {
+	margin: 0 0 5px 0;
+}
+#message p {
+	margin: 0 0 0 70px;
+}
+
+#message ul li .time {
+	text-decoration: underline;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	display: inline-table;
+}
+
+/*
+стиль для відправленого повідомлення мною
+*/
+#message .my_messge {
+	background: rgb(245, 15, 15, 0.4);
+}
+
+#message ul .my_messge .avatar {
+	width: 60px;
+	height: 60px;
+	float: right;
+	margin-right: 10px;
+}
+
+#message ul .my_messge .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#message .my_messge h2 {
+	text-align: end;
+	margin: 0 0 5px 0;
+}
+#message .my_messge p {
+	margin: 0 70px 0 0;
+}
+
+#message .my_messge .time {
+	display: inline-table;
+	text-decoration: underline;
+	top: 10px;
+	left: 5px;
+	margin-bottom: 10px;
+}
+
+/*====================
+Поле набору повідомлення і відправки
+======================*/
+#form {
+	height: 60px;
+	width: 100%;
+}
+
+#form textarea {
+	height: calc(100% - 4px);
+	width: calc(100% - 79px);
+    border: none;
+    margin: 0 5px 5px 5px;
+    background: #c1c1f9;
+    float: left;
+    outline: none;
+    font-size: 20px;
+    resize: none;
+}
+#form button {
+	width: 60px;
+    height: 100%;
+    border: none;
+    background: #c1c1f9;
+    outline: none;
+    cursor: pointer;
+}
+
+#form button:active {
+	background:  grey;
+}
+
+/*=======================
+Стилі для модальних вікон
+=========================*/
+
+.modal {
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border: #4050ff solid 2px;
+	position: absolute;
+	top: 150px;
+	left: calc(50% - 200px);
+	padding: 20px;
+	display: none;
+	z-index: 999;
+}
+
+.modal .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.modal .content-modal {
+	max-height: 380px;
+	overflow-y: auto;
+	margin-top: 10px;
+}
+/*====================
+ Модальне вікно контактів
+ ====================*/
+#contacts-modal {
+	height: 400px;
+	display: none;
+}
+
+#contacts-modal ul {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#contacts-modal ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#contacts-modal ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#contacts-modal ul li {
+	width: 100%;
+	position: relative;
+	height: 65px;
+	margin-bottom: 5px; 
+}
+#contacts-modal ul li:hover {
+	background: #e1343f;
+	background: linear-gradient(100deg,#ea3234, #4050ff);
+}
+
+#contacts-modal h2 {
+	padding: 0px 15px 0 15px;
+	margin: 0;
+}
+
+/*===================
+ Модальне вікно входу користувача
+ ==================*/
+
+#login-modal {
+	display: none;
+}
+
+#loginform {
+ 	width: 100%;
+ 	height: 100%;
+ 	font-size: 25px;
+}
+
+#loginform input {
+ 	height: 30px;
+    width: calc(100% - 10px);
+    border: none;
+    padding: 0 5px;
+    background: linear-gradient(100deg,#ea3234, #4050ff);
+    margin: 0;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#loginform input::placeholder {
+	color: white;
+}
+#loginform label {
+	display: block;
+ 	text-align: center;
+ 	margin-bottom: 10px;
+}
+#loginform #loginbtn {
+	width: 100%;
+	font-weight: bolder;
+}
+/*========================
+	стилі для модального вікна реєстрації
+====================================*/
+#registration-modal {
+	display: none;
+}
+
+#registration-form {
+ 	width: 100%;
+ 	height: 100%;
+ 	font-size: 25px; 
+}
+
+#registration-form input {
+ 	height: 30px;
+    width: calc(100% - 10px);
+    border: none;
+    padding: 0 5px;
+    background: linear-gradient(100deg,#ea3234, #4050ff);
+    margin: 0;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#registration-form input::placeholder {
+	color: white;
+}
+#registration-form label {
+	display: block;
+ 	text-align: center;
+ 	margin-bottom: 10px;
+}
+#registration-form #registration-btn {
+	width: 100%;
+	font-weight: bolder;
+}
+
+/*=================*/
+#content #welcome_page{
+	margin: 0 auto;
+	padding-top: 50px; 
+	width: 600px;
+	max-height: 545px;
+}
+#welcome_page h2,h3{
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+#welcome_page  img{
+	width: 600px;
+}
+/*====================
+ Модальне вікно друзів
+ ====================*/
+#friends-modal {
+	height: 400px;
+	display: none;
+}
+
+#friends-modal ul {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#friends-modal ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#friends-modal ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+#friends-modal ul li {
+	width: 100%;
+	position: relative;
+	height: 65px;
+	margin-bottom: 5px; 
+}
+#friends-modal ul li:hover {
+	background: #e1343f;
+	background: linear-gradient(100deg,#ea3234, #4050ff);
+}
+
+#friends-modal h2 {
+	padding: 0px 15px 0 15px;
+	margin: 0;
+}
